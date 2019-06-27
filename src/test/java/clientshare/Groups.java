@@ -85,6 +85,10 @@ public class Groups {
 
 		Thread.sleep(10000);
 
+	driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+	Thread.sleep(3000);
+		
+		
 		String grp = driver.findElement(By.xpath("//h5[contains(text(),'Everyone')]")).getText();
 		System.out.println(grp);
 
@@ -112,6 +116,10 @@ public class Groups {
 
 	@Test(priority = 1)
 	public void Create_Group_Existence() throws InterruptedException {
+		
+		Thread.sleep(6000);
+		driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+		Thread.sleep(3000);
 
 		String button = driver.findElement(By.xpath("//button[contains(text(),'Create a group')]")).getText();
 		// System.out.println(button);
@@ -139,7 +147,11 @@ public class Groups {
 
 	@Test(priority = 2)
 	public void Create_group_click() throws InterruptedException {
-		Thread.sleep(4000);
+		Thread.sleep(8000);
+		
+		driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+		Thread.sleep(3000);
+		
 		driver.findElement(By.xpath("//button[contains(text(),'Create a group')]")).click();
 		Thread.sleep(2000);
 		String mh = driver.findElement(By.xpath("//div[@class='modal-title h4']")).getText();
@@ -167,7 +179,10 @@ public class Groups {
 
 	@Test(priority = 3)
 	public void Create_group_close() throws InterruptedException {
-		Thread.sleep(4000);
+		Thread.sleep(8000);
+		
+		driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+		Thread.sleep(3000);
 
 		driver.findElement(By.xpath("//button[contains(text(),'Create a group')]")).click();
 		Thread.sleep(2000);
@@ -186,7 +201,14 @@ public class Groups {
 
 	@Test(priority = 4)
 	public void Create_group_Validation() throws InterruptedException {
+		
+		
+
 		Thread.sleep(4000);
+		driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+		Thread.sleep(3000);
+
+		
 		driver.findElement(By.xpath("//button[contains(text(),'Create a group')]")).click();
 		Thread.sleep(2000);
 
@@ -222,7 +244,11 @@ public class Groups {
 
 	@Test(priority = 5)
 	public void Create_group_Valdation_2() throws InterruptedException {
-		Thread.sleep(4000);
+		Thread.sleep(8000);
+		driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+		Thread.sleep(3000);
+
+		
 		driver.findElement(By.xpath("//button[contains(text(),'Create a group')]")).click();
 		Thread.sleep(2000);
 
@@ -257,7 +283,11 @@ public class Groups {
 
 	@Test(priority = 6)
 	public void Create_Group() throws InterruptedException {
-		Thread.sleep(4000);
+		Thread.sleep(8000);
+		
+		driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+		Thread.sleep(3000);
+
 		driver.findElement(By.xpath("//button[contains(text(),'Create a group')]")).click();
 		Thread.sleep(2000);
 
@@ -268,12 +298,16 @@ public class Groups {
 		driver.findElement(By.xpath("//h4[contains(text(),'Buyermember Normal share')]")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@placeholder='Add user starting from @']")).sendKeys("@nav");
-		driver.findElement(By.xpath("//h4[contains(text(),'Naveen Watrana')]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//h4[contains(text(),'Nav Ddd')]")).click();
 
 		Thread.sleep(2000);
 
 		driver.findElement(By.xpath("//button[@class='btn btn-primary'][contains(text(),'Create')]")).click();
 
+		Thread.sleep(4000);
+		
+		driver.findElement(By.xpath("//*[text() = 'Edit groups']")).click();
 		Thread.sleep(4000);
 
 		String we = driver.findElement(By.xpath("//h5[contains(text(),'Ucreate_147')]")).getText();
@@ -302,6 +336,9 @@ public class Groups {
 	public void Edit_Group_Button() throws InterruptedException {
 		Thread.sleep(8000);
 
+		driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+		Thread.sleep(3000);
+		
 		driver.findElement(By.xpath("//*[text() = 'Edit groups']")).click();
 		Thread.sleep(4000);
 		String qw = driver.findElement(By.xpath("//div[@class='modal-title h4']")).getText();
@@ -333,6 +370,9 @@ public class Groups {
 
 		Thread.sleep(8000);
 
+		driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+		Thread.sleep(3000);
+		
 		driver.findElement(By.xpath("//*[text() = 'Edit groups']")).click();
 		Thread.sleep(4000);
 
@@ -359,6 +399,9 @@ public class Groups {
 	public void Edit_group_delete_validation() throws InterruptedException {
 
 		Thread.sleep(8000);
+		
+		driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+		Thread.sleep(3000);
 
 		driver.findElement(By.xpath("//*[text() = 'Edit groups']")).click();
 		Thread.sleep(4000);
@@ -394,7 +437,8 @@ public class Groups {
 	@Test(priority = 10, description = "Verify that when user click outside of the delete validation pop up then it redirect to the edit pop or not.")
 	public void Edit_group_delete_popup1() throws InterruptedException {
 		Thread.sleep(8000);
-
+		driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[text() = 'Edit groups']")).click();
 		Thread.sleep(4000);
 
@@ -442,7 +486,9 @@ public class Groups {
 	public void Edit_group_delete() throws InterruptedException {
 		
 		
-		Thread.sleep(8000);
+		Thread.sleep(10000);
+		driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+		Thread.sleep(3000);
 
 		driver.findElement(By.xpath("//*[text() = 'Edit groups']")).click();
 		Thread.sleep(4000);
@@ -451,12 +497,12 @@ public class Groups {
 
 		Thread.sleep(4000);
 
-	//	driver.findElement(By.xpath("/div[@class='ConfirmationModal-redBtn-0-1-50 ConfirmationModal-redBtn-0-1-55 green-btn']")).click();
+	driver.findElement(By.xpath("//*[text()= 'Do you want to permanently delete this group?']/ancestor::div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]")).click();
 
 		
-		Actions actions = new Actions(driver);
+		/*Actions actions = new Actions(driver);
 		WebElement elementLocator = driver.findElement(By.xpath("//div[@class='ConfirmationModal-redBtn-0-1-50 ConfirmationModal-redBtn-0-1-55 green-btn']"));
-		actions.doubleClick(elementLocator).perform();
+		actions.doubleClick(elementLocator).perform();*/
 		Thread.sleep(4000);
 
 		test = extent.createTest("MyTweleveTest", "Sample description");
@@ -466,11 +512,13 @@ public class Groups {
 	@Test(priority = 12, description= "")
 	public void Edit_group_information() throws InterruptedException {
 		
-		Thread.sleep(8000);
-
+		Thread.sleep(60000);
+		driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+		Thread.sleep(3000);
+		
 		driver.findElement(By.xpath("//*[text() = 'Edit groups']")).click();
 		Thread.sleep(4000);
-		driver.findElement(By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[20]/div[1]")).click();
+		driver.findElement(By.xpath("/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[13]/div[1]")).click();
 		Thread.sleep(3000);
        driver.findElement(By.xpath("//input[@placeholder='Type a group name']")).click();
        Thread.sleep(3000);
@@ -481,7 +529,38 @@ public class Groups {
 		
 		Thread.sleep(5000);
 		
-		// pending this case .
+		driver.findElement(By.xpath("//button[@type='submit'][contains(text(),'Save')]")).click();
+		
+		Thread.sleep(8000);
+
+		
+	
+		
+		
+		driver.findElement(By.xpath("//*[text() = 'Edit groups']")).click();
+		Thread.sleep(4000);
+		
+		
+		
+		String we = driver.findElement(By.xpath("//h5[contains(text(),'group edited')]")).getText();
+		String li = "group edited";
+
+		if (we.equals(li)) {
+
+			test = extent.createTest("MySeventhTest", "Sample description");
+			test.log(Status.PASS, MarkupHelper.createLabel("this test case is pass", colors.BLACK));
+
+		}
+
+		else {
+
+			test = extent.createTest("MySeventhTest", "Sample description");
+			test.log(Status.FAIL, MarkupHelper.createLabel("this test case is FAIL", colors.LIME));
+
+		}
+		driver.navigate().refresh();
+
+		Thread.sleep(8000);
 		
 		
 		
