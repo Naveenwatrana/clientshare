@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="9" total="10" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="33110" started-at="2019-05-31T09:10:40Z" finished-at="2019-05-31T09:11:13Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="33110" started-at="2019-05-31T09:10:40Z" finished-at="2019-05-31T09:11:13Z">
+      <class name="clientshare.login">
+        <test-method status="PASS" signature="set()[pri:0, instance:clientshare.login@68c4039c]" name="set" is-config="true" duration-ms="312" started-at="2019-05-31T09:10:39Z" finished-at="2019-05-31T09:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:clientshare.login@68c4039c]" name="beforeclass" is-config="true" duration-ms="20053" started-at="2019-05-31T09:10:40Z" finished-at="2019-05-31T09:11:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="cancel_option()[pri:9, instance:clientshare.login@68c4039c]" name="cancel_option" duration-ms="10221" started-at="2019-05-31T09:11:00Z" finished-at="2019-05-31T09:11:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancel_option -->
+        <test-method status="PASS" signature="Getresult(org.testng.ITestResult)[pri:0, instance:clientshare.login@68c4039c]" name="Getresult" is-config="true" duration-ms="5" started-at="2019-05-31T09:11:10Z" finished-at="2019-05-31T09:11:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cancel_option status=SUCCESS method=login.cancel_option()[pri:9, instance:clientshare.login@68c4039c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Getresult -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:clientshare.login@68c4039c]" name="teardown" is-config="true" duration-ms="2795" started-at="2019-05-31T09:11:10Z" finished-at="2019-05-31T09:11:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- clientshare.login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
