@@ -5,7 +5,7 @@
     <classes>
       <class name="clientshare.Post_Feed">
         <methods>
-          <include name="Click_on_post_option"/>
+          <include name="select_group"/>
           <include name="teardown"/>
           <include name="set"/>
           <include name="Getresult"/>

@@ -28,7 +28,6 @@ public class Post_Feed {
 
 	public ExtentColor colors;
 
-	
 	@BeforeSuite
 	public void set() {
 
@@ -55,25 +54,28 @@ public class Post_Feed {
 
 	}
 
-	/*@BeforeMethod
-
-	public void beforeclass() {
-		System.setProperty("webdriver.gecko.driver", "D:\\gdriver\\geckodriver.exe");
-
-		driver = new FirefoxDriver();
-
-		driver.manage().window().maximize();
-
-		driver.get("https://uat-clientspace.herokuapp.com");
-
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("aamirpal@ucreate.co.in");
-		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Test1234");
-		driver.findElement(By.xpath("//button[@id='show-sent']")).click();
-
-	}*/
+	/*
+	 * @BeforeMethod
+	 * 
+	 * public void beforeclass() { System.setProperty("webdriver.gecko.driver",
+	 * "D:\\gdriver\\geckodriver.exe");
+	 * 
+	 * driver = new FirefoxDriver();
+	 * 
+	 * driver.manage().window().maximize();
+	 * 
+	 * driver.get("https://uat-clientspace.herokuapp.com");
+	 * 
+	 * driver.findElement(By.xpath("//input[@id='email']")).sendKeys(
+	 * "aamirpal@ucreate.co.in");
+	 * driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Test1234");
+	 * driver.findElement(By.xpath("//button[@id='show-sent']")).click();
+	 * 
+	 * }
+	 */
 
 	@Test(priority = 0, description = "Check that post option is availble.")
-     public void Check_post_option_is_availble() throws InterruptedException {
+	public void Check_post_option_is_availble() throws InterruptedException {
 		Thread.sleep(8000);
 		String tp = driver.findElement(By.xpath("//*[text()='What do you want to talk about?']")).getText();
 		String sp = "What do you want to talk about?";
@@ -105,21 +107,22 @@ public class Post_Feed {
 
 		driver.findElement(By.xpath("//button[contains(text(),'Post')]")).click();
 		Thread.sleep(6000);
-         String re = driver.findElement(By.xpath("//*[text()= 'Where do you want to post? Choose a category:']")).getText();
-         
-         String rt = "Where do you want to post? Choose a category:";
+		String re = driver.findElement(By.xpath("//*[text()= 'Where do you want to post? Choose a category:']"))
+				.getText();
+
+		String rt = "Where do you want to post? Choose a category:";
 
 		if (re.equals(rt)) {
 
 			test = extent.createTest("MyFirstTest", "Sample description");
-			test.log(Status.PASS, MarkupHelper.createLabel("this test case is pass", colors.BLACK));
+			test.log(Status.PASS, MarkupHelper.createLabel("Second test case is pass", colors.BLACK));
 
 		}
 
 		else {
 
 			test = extent.createTest("MyFirstTest", "Sample description");
-			test.log(Status.FAIL, MarkupHelper.createLabel("this test case is FAIL", colors.LIME));
+			test.log(Status.FAIL, MarkupHelper.createLabel("Second test case is FAIL", colors.LIME));
 
 		}
 
@@ -128,8 +131,76 @@ public class Post_Feed {
 		Thread.sleep(8000);
 
 	}
-	
-	
+
+	@Test(priority = 2, description = "To check user is able to select the category ")
+	public void select_category() throws InterruptedException {
+
+		Thread.sleep(8000);
+
+		driver.findElement(By.xpath("//button[contains(text(),'Post')]")).click();
+		Thread.sleep(6000);
+		driver.findElement(By.xpath("//h5[contains(text(),'Management Information')]")).click();
+
+		String pr = driver.findElement(By.xpath("//*[text()= 'Who should see this? Choose a group:']")).getText();
+        String rp = "Who should see this? Choose a group:";
+        
+
+		if (pr.equals(rp)) {
+
+			test = extent.createTest("MyFirstTest", "Sample description");
+			test.log(Status.PASS, MarkupHelper.createLabel("Third test case is pass", colors.BLACK));
+
+		}
+
+		else {
+
+			test = extent.createTest("MyFirstTest", "Sample description");
+			test.log(Status.FAIL, MarkupHelper.createLabel("Thrid test case is FAIL", colors.LIME));
+
+		}
+
+		driver.navigate().refresh();
+
+		Thread.sleep(8000);
+
+	}
+	@Test(priority = 3, description = "To check user is able to select the group ")
+	public void select_group() throws InterruptedException {
+
+		Thread.sleep(8000);
+
+		driver.findElement(By.xpath("//button[contains(text(),'Post')]")).click();
+		Thread.sleep(6000);
+		driver.findElement(By.xpath("//h5[contains(text(),'Management Information')]")).click();
+		
+		driver.findElement(By.xpath("//h5[contains(text(),'Everyone')]")).click();
+		
+	String yu =driver.findElement(By.xpath("//input[@placeholder='Subject']")).getText();
+		String uy= "Subject";
+		
+		Thread.sleep(3000);
+		
+		System.out.println(uy);
+		if (yu.equals(uy)) {
+
+			test = extent.createTest("MyFirstTest", "Sample description");
+			test.log(Status.PASS, MarkupHelper.createLabel("forth test case is pass", colors.BLACK));
+
+		}
+
+		else {
+
+			test = extent.createTest("MyFirstTest", "Sample description");
+			test.log(Status.FAIL, MarkupHelper.createLabel("forth test case is FAIL", colors.LIME));
+
+		}
+
+		driver.navigate().refresh();
+
+		Thread.sleep(8000);
+		
+		
+	}
 	
 
 	@AfterMethod

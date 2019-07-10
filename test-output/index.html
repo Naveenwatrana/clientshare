@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\ucreate-26\AppData\Local\Temp\testng-eclipse--1805987973\testng-customsuite.xml</span>
+                    <span>C:\Users\ucreate-26\AppData\Local\Temp\testng-eclipse--1665162250\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="clientshare.Post_Feed" hash-for-method="Check_post_option_is_availble">Check_post_option_is_availble</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="clientshare.Post_Feed" hash-for-method="Click_on_post_option">Click_on_post_option</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="clientshare.Post_Feed" hash-for-method="select_group">select_group</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -130,20 +125,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Check_post_option_is_availble">
-                  </a> <!-- Check_post_option_is_availble -->
-                  <span class="method-name">Check_post_option_is_availble</span>
+                  <a name="select_group">
+                  </a> <!-- select_group -->
+                  <span class="method-name">select_group</span>
                   <em>
-(Check that post option is availble.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Click_on_post_option">
-                  </a> <!-- Click_on_post_option -->
-                  <span class="method-name">Click_on_post_option</span>
-                  <em>
-(Check the User is able to click on post button.)                  </em>
+(To check user is able to select the group )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -151,7 +137,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ucreate-26\AppData\Local\Temp\testng-eclipse--1805987973\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ucreate-26\AppData\Local\Temp\testng-eclipse--1665162250\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -160,7 +146,11 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;clientshare.Post_Feed&quot;/&gt;
+      &lt;class name=&quot;clientshare.Post_Feed&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;select_group&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- clientshare.Post_Feed --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -200,20 +190,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Click_on_post_option')
+data.setCell(0, 1, 'select_group')
 data.setCell(0, 2, 'clientshare.Post_Feed')
-data.setCell(0, 3, 25446);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Check_post_option_is_availble')
-data.setCell(1, 2, 'clientshare.Post_Feed')
-data.setCell(1, 3, 18908);
+data.setCell(0, 3, 30685);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -228,9 +214,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">clientshare.Post_Feed</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">select_category</span>
+                <br/>
+                <span class="ignored-method-name">Check_post_option_is_availble</span>
+                <br/>
+                <span class="ignored-method-name">Click_on_post_option</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -245,24 +242,16 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">Check_post_option_is_availble</span>
-                <span class="method-start">17625 ms</span>
+                <span class="method-name">select_group</span>
+                <span class="method-start">24156 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">Getresult([TestResult name=Check_post_option_is_availble status=SUCCESS method=Post_Feed.Check_post_option_is_...)</span>
-                <span class="method-start">36536 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">Click_on_post_option</span>
-                <span class="method-start">36542 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">Getresult([TestResult name=Click_on_post_option status=SUCCESS method=Post_Feed.Click_on_post_option()[pri:1, ...)</span>
-                <span class="method-start">61990 ms</span>
+                <span class="method-name">Getresult([TestResult name=select_group status=SUCCESS method=Post_Feed.select_group()[pri:3, instance:clients...)</span>
+                <span class="method-start">54844 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">61998 ms</span>
+                <span class="method-start">54848 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

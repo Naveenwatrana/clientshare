@@ -1,47 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46997" started-at="2019-07-10T11:05:59Z" finished-at="2019-07-10T11:06:46Z">
+  <suite name="Default suite" duration-ms="33938" started-at="2019-07-10T12:11:38Z" finished-at="2019-07-10T12:12:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46997" started-at="2019-07-10T11:05:59Z" finished-at="2019-07-10T11:06:46Z">
+    <test name="Default test" duration-ms="33938" started-at="2019-07-10T12:11:38Z" finished-at="2019-07-10T12:12:12Z">
       <class name="clientshare.Post_Feed">
-        <test-method status="PASS" signature="set()[pri:0, instance:clientshare.Post_Feed@61832929]" name="set" is-config="true" duration-ms="17598" started-at="2019-07-10T11:05:41Z" finished-at="2019-07-10T11:05:59Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:clientshare.Post_Feed@26653222]" name="set" is-config="true" duration-ms="24132" started-at="2019-07-10T12:11:14Z" finished-at="2019-07-10T12:11:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="Check_post_option_is_availble()[pri:0, instance:clientshare.Post_Feed@61832929]" name="Check_post_option_is_availble" duration-ms="18908" started-at="2019-07-10T11:05:59Z" description="Check that post option is availble." finished-at="2019-07-10T11:06:17Z">
+        <test-method status="PASS" signature="select_group()[pri:3, instance:clientshare.Post_Feed@26653222]" name="select_group" duration-ms="30685" started-at="2019-07-10T12:11:38Z" description="To check user is able to select the group " finished-at="2019-07-10T12:12:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Check_post_option_is_availble -->
-        <test-method status="PASS" signature="Getresult(org.testng.ITestResult)[pri:0, instance:clientshare.Post_Feed@61832929]" name="Getresult" is-config="true" duration-ms="3" started-at="2019-07-10T11:06:18Z" finished-at="2019-07-10T11:06:18Z">
+        </test-method> <!-- select_group -->
+        <test-method status="PASS" signature="Getresult(org.testng.ITestResult)[pri:0, instance:clientshare.Post_Feed@26653222]" name="Getresult" is-config="true" duration-ms="4" started-at="2019-07-10T12:12:09Z" finished-at="2019-07-10T12:12:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Check_post_option_is_availble status=SUCCESS method=Post_Feed.Check_post_option_is_availble()[pri:0, instance:clientshare.Post_Feed@61832929] output={null}]]]>
+                <![CDATA[[TestResult name=select_group status=SUCCESS method=Post_Feed.select_group()[pri:3, instance:clientshare.Post_Feed@26653222] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Getresult -->
-        <test-method status="PASS" signature="Click_on_post_option()[pri:1, instance:clientshare.Post_Feed@61832929]" name="Click_on_post_option" duration-ms="25446" started-at="2019-07-10T11:06:18Z" description="Check the User is able to click on post button." finished-at="2019-07-10T11:06:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Click_on_post_option -->
-        <test-method status="PASS" signature="Getresult(org.testng.ITestResult)[pri:0, instance:clientshare.Post_Feed@61832929]" name="Getresult" is-config="true" duration-ms="8" started-at="2019-07-10T11:06:43Z" finished-at="2019-07-10T11:06:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Click_on_post_option status=SUCCESS method=Post_Feed.Click_on_post_option()[pri:1, instance:clientshare.Post_Feed@61832929] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Getresult -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:clientshare.Post_Feed@61832929]" name="teardown" is-config="true" duration-ms="2597" started-at="2019-07-10T11:06:43Z" finished-at="2019-07-10T11:06:46Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:clientshare.Post_Feed@26653222]" name="teardown" is-config="true" duration-ms="3221" started-at="2019-07-10T12:12:09Z" finished-at="2019-07-10T12:12:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
