@@ -509,7 +509,7 @@ public class Groups {
 		test.log(Status.PASS, MarkupHelper.createLabel("this test case is pass", colors.BLACK));
 	
 	}
-	@Test(priority = 12, description= "")
+	@Test(priority = 12, description= "Edit the group")
 	public void Edit_group_information() throws InterruptedException {
 		
 		Thread.sleep(60000);
@@ -541,31 +541,86 @@ public class Groups {
 		Thread.sleep(4000);
 		
 		
+	 	driver.findElement(By.xpath("/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[13]/div[1]")).click();
+		Thread.sleep(5000);
 		
-		String we = driver.findElement(By.xpath("//h5[contains(text(),'group edited')]")).getText();
-		String li = "group edited";
+		 driver.findElement(By.xpath("//input[@placeholder='Type a group name']")).click();
+		 Thread.sleep(3000);
+		 
+		 String we =  driver.findElement(By.xpath("//input[@placeholder='Type a group name']")).getText();
+		Thread.sleep(3000);
+		
+		System.out.println(we);
+		//String we = driver.findElement(By.xpath("//h5[contains(text(),'group edit new')]")).getText();
+		String li = "group edit new";
 
 		if (we.equals(li)) {
 
-			test = extent.createTest("MySeventhTest", "Sample description");
+			test = extent.createTest("MyThirteenTest", "Sample description");
 			test.log(Status.PASS, MarkupHelper.createLabel("this test case is pass", colors.BLACK));
 
 		}
 
 		else {
 
-			test = extent.createTest("MySeventhTest", "Sample description");
+			test = extent.createTest("MyThirteenthTest", "Sample description");
 			test.log(Status.FAIL, MarkupHelper.createLabel("this test case is FAIL", colors.LIME));
 
 		}
 		driver.navigate().refresh();
 
-		Thread.sleep(8000);
-		
-		
-		
+		Thread.sleep(8000);	
 		
 	}
+	
+	
+	@Test(priority = 13, description= "Check the Validation if we create group with the same name")	
+	public void group_with_same_name() throws InterruptedException {
+		
+        Thread.sleep(60000);
+		
+        driver.findElement(By.xpath("//*[text()= 'General Updates1']")).click();
+		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath("//button[contains(text(),'Create a group')]")).click();
+		Thread.sleep(2000);
+
+		driver.findElement(By.xpath("//input[@placeholder='Type a group name']")).sendKeys("Ucreate_147");
+		
+		driver.findElement(By.xpath("//input[@placeholder='Add user starting from @']")).sendKeys("@nav");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//h4[contains(text(),'Nav Ddd')]")).click();
+		
+		driver.findElement(By.xpath("//button[@class='btn btn-primary'][contains(text(),'Create')]")).click();
+        Thread.sleep(5000);
+        String re =  driver.findElement(By.xpath("//*[contains(text(),'This group name already exists.')]")).getText();
+        String rq = "This group name already exists.";
+		
+        if (re.equals(rq)) {
+
+			test = extent.createTest("MyFourteenTest", "Sample description");
+			test.log(Status.PASS, MarkupHelper.createLabel("this test case is pass", colors.BLACK));
+
+		}
+
+		else {
+
+			test = extent.createTest("MyFourteenthTest", "Sample description");
+			test.log(Status.FAIL, MarkupHelper.createLabel("this test case is FAIL", colors.LIME));
+
+		}
+		driver.navigate().refresh();
+
+		Thread.sleep(8000);	
+        
+		
+	}
+	
+	
+	
+	
+	
+	
 	
 
 	@AfterMethod

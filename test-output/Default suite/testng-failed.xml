@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="clientshare.Groups">
+      <class name="clientshare.Post_Feed">
         <methods>
-          <include name="Edit_group_information"/>
+          <include name="Click_on_post_option"/>
+          <include name="teardown"/>
           <include name="set"/>
           <include name="Getresult"/>
-          <include name="teardown"/>
         </methods>
-      </class> <!-- clientshare.Groups -->
+      </class> <!-- clientshare.Post_Feed -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

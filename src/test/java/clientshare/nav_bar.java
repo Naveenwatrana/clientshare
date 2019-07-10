@@ -567,6 +567,8 @@ public class nav_bar {
 	@Test(priority = 21)
 	public void side_navbar_redirectback() throws InterruptedException {
 
+		Thread.sleep(12000);
+	
 		driver.findElement(By.xpath("//a[@title='Community']")).click();
 
 		Thread.sleep(5000);

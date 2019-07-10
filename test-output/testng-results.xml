@@ -1,134 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="12" total="13" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="99223" started-at="2019-06-27T12:14:56Z" finished-at="2019-06-27T12:16:35Z">
+  <suite name="Default suite" duration-ms="46997" started-at="2019-07-10T11:05:59Z" finished-at="2019-07-10T11:06:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="99223" started-at="2019-06-27T12:14:56Z" finished-at="2019-06-27T12:16:35Z">
-      <class name="clientshare.Groups">
-        <test-method status="PASS" signature="set()[pri:0, instance:clientshare.Groups@3532ec19]" name="set" is-config="true" duration-ms="33542" started-at="2019-06-27T12:14:22Z" finished-at="2019-06-27T12:14:56Z">
+    <test name="Default test" duration-ms="46997" started-at="2019-07-10T11:05:59Z" finished-at="2019-07-10T11:06:46Z">
+      <class name="clientshare.Post_Feed">
+        <test-method status="PASS" signature="set()[pri:0, instance:clientshare.Post_Feed@61832929]" name="set" is-config="true" duration-ms="17598" started-at="2019-07-10T11:05:41Z" finished-at="2019-07-10T11:05:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="FAIL" signature="Edit_group_information()[pri:12, instance:clientshare.Groups@3532ec19]" name="Edit_group_information" duration-ms="99150" started-at="2019-06-27T12:14:56Z" finished-at="2019-06-27T12:16:35Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //h5[contains(text(),'group edited')]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UCREATE-26-PC', ip: '192.168.0.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2168, moz:profile: C:\Users\ucreate-26\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 912c6040-ae85-4a6b-8fe7-e65b424ffda5
-*** Element info: {Using=xpath, value=//h5[contains(text(),'group edited')]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //h5[contains(text(),'group edited')]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UCREATE-26-PC', ip: '192.168.0.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2168, moz:profile: C:\Users\ucreate-26\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 912c6040-ae85-4a6b-8fe7-e65b424ffda5
-*** Element info: {Using=xpath, value=//h5[contains(text(),'group edited')]}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at clientshare.Groups.Edit_group_information(Groups.java:545)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="Check_post_option_is_availble()[pri:0, instance:clientshare.Post_Feed@61832929]" name="Check_post_option_is_availble" duration-ms="18908" started-at="2019-07-10T11:05:59Z" description="Check that post option is availble." finished-at="2019-07-10T11:06:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Edit_group_information -->
-        <test-method status="FAIL" signature="Getresult(org.testng.ITestResult)[pri:0, instance:clientshare.Groups@3532ec19]" name="Getresult" is-config="true" duration-ms="26" started-at="2019-06-27T12:16:35Z" finished-at="2019-06-27T12:16:35Z">
+        </test-method> <!-- Check_post_option_is_availble -->
+        <test-method status="PASS" signature="Getresult(org.testng.ITestResult)[pri:0, instance:clientshare.Post_Feed@61832929]" name="Getresult" is-config="true" duration-ms="3" started-at="2019-07-10T11:06:18Z" finished-at="2019-07-10T11:06:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Edit_group_information status=FAILURE method=Groups.Edit_group_information()[pri:12, instance:clientshare.Groups@3532ec19] output={null}]]]>
+                <![CDATA[[TestResult name=Check_post_option_is_availble status=SUCCESS method=Post_Feed.Check_post_option_is_availble()[pri:0, instance:clientshare.Post_Feed@61832929] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at clientshare.Groups.Getresult(Groups.java:577)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Getresult -->
-        <test-method status="SKIP" signature="teardown()[pri:0, instance:clientshare.Groups@3532ec19]" name="teardown" is-config="true" duration-ms="0" started-at="2019-06-27T12:16:35Z" finished-at="2019-06-27T12:16:35Z">
+        <test-method status="PASS" signature="Click_on_post_option()[pri:1, instance:clientshare.Post_Feed@61832929]" name="Click_on_post_option" duration-ms="25446" started-at="2019-07-10T11:06:18Z" description="Check the User is able to click on post button." finished-at="2019-07-10T11:06:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Click_on_post_option -->
+        <test-method status="PASS" signature="Getresult(org.testng.ITestResult)[pri:0, instance:clientshare.Post_Feed@61832929]" name="Getresult" is-config="true" duration-ms="8" started-at="2019-07-10T11:06:43Z" finished-at="2019-07-10T11:06:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Click_on_post_option status=SUCCESS method=Post_Feed.Click_on_post_option()[pri:1, instance:clientshare.Post_Feed@61832929] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Getresult -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:clientshare.Post_Feed@61832929]" name="teardown" is-config="true" duration-ms="2597" started-at="2019-07-10T11:06:43Z" finished-at="2019-07-10T11:06:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- clientshare.Groups -->
+      </class> <!-- clientshare.Post_Feed -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
