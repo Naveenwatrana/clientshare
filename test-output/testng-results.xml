@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33938" started-at="2019-07-10T12:11:38Z" finished-at="2019-07-10T12:12:12Z">
+  <suite name="Default suite" duration-ms="61023" started-at="2019-07-12T06:47:58Z" finished-at="2019-07-12T06:48:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33938" started-at="2019-07-10T12:11:38Z" finished-at="2019-07-10T12:12:12Z">
+    <test name="Default test" duration-ms="61023" started-at="2019-07-12T06:47:58Z" finished-at="2019-07-12T06:48:59Z">
       <class name="clientshare.Post_Feed">
-        <test-method status="PASS" signature="set()[pri:0, instance:clientshare.Post_Feed@26653222]" name="set" is-config="true" duration-ms="24132" started-at="2019-07-10T12:11:14Z" finished-at="2019-07-10T12:11:38Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:clientshare.Post_Feed@26653222]" name="set" is-config="true" duration-ms="23879" started-at="2019-07-12T06:47:34Z" finished-at="2019-07-12T06:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="select_group()[pri:3, instance:clientshare.Post_Feed@26653222]" name="select_group" duration-ms="30685" started-at="2019-07-10T12:11:38Z" description="To check user is able to select the group " finished-at="2019-07-10T12:12:09Z">
+        <test-method status="PASS" signature="add_post_without_attachment()[pri:5, instance:clientshare.Post_Feed@26653222]" name="add_post_without_attachment" duration-ms="58299" started-at="2019-07-12T06:47:58Z" description="add a post without attachment" finished-at="2019-07-12T06:48:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- select_group -->
-        <test-method status="PASS" signature="Getresult(org.testng.ITestResult)[pri:0, instance:clientshare.Post_Feed@26653222]" name="Getresult" is-config="true" duration-ms="4" started-at="2019-07-10T12:12:09Z" finished-at="2019-07-10T12:12:09Z">
+        </test-method> <!-- add_post_without_attachment -->
+        <test-method status="PASS" signature="Getresult(org.testng.ITestResult)[pri:0, instance:clientshare.Post_Feed@26653222]" name="Getresult" is-config="true" duration-ms="2" started-at="2019-07-12T06:48:56Z" finished-at="2019-07-12T06:48:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=select_group status=SUCCESS method=Post_Feed.select_group()[pri:3, instance:clientshare.Post_Feed@26653222] output={null}]]]>
+                <![CDATA[[TestResult name=add_post_without_attachment status=SUCCESS method=Post_Feed.add_post_without_attachment()[pri:5, instance:clientshare.Post_Feed@26653222] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Getresult -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:clientshare.Post_Feed@26653222]" name="teardown" is-config="true" duration-ms="3221" started-at="2019-07-10T12:12:09Z" finished-at="2019-07-10T12:12:12Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:clientshare.Post_Feed@26653222]" name="teardown" is-config="true" duration-ms="2691" started-at="2019-07-12T06:48:56Z" finished-at="2019-07-12T06:48:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

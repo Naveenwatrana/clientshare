@@ -114,14 +114,14 @@ public class Post_Feed {
 
 		if (re.equals(rt)) {
 
-			test = extent.createTest("MyFirstTest", "Sample description");
+			test = extent.createTest("MySecondTest", "Sample description");
 			test.log(Status.PASS, MarkupHelper.createLabel("Second test case is pass", colors.BLACK));
 
 		}
 
 		else {
 
-			test = extent.createTest("MyFirstTest", "Sample description");
+			test = extent.createTest("MySecondTest", "Sample description");
 			test.log(Status.FAIL, MarkupHelper.createLabel("Second test case is FAIL", colors.LIME));
 
 		}
@@ -142,19 +142,18 @@ public class Post_Feed {
 		driver.findElement(By.xpath("//h5[contains(text(),'Management Information')]")).click();
 
 		String pr = driver.findElement(By.xpath("//*[text()= 'Who should see this? Choose a group:']")).getText();
-        String rp = "Who should see this? Choose a group:";
-        
+		String rp = "Who should see this? Choose a group:";
 
 		if (pr.equals(rp)) {
 
-			test = extent.createTest("MyFirstTest", "Sample description");
+			test = extent.createTest("MyThirdTest", "Sample description");
 			test.log(Status.PASS, MarkupHelper.createLabel("Third test case is pass", colors.BLACK));
 
 		}
 
 		else {
 
-			test = extent.createTest("MyFirstTest", "Sample description");
+			test = extent.createTest("MyThirdTest", "Sample description");
 			test.log(Status.FAIL, MarkupHelper.createLabel("Thrid test case is FAIL", colors.LIME));
 
 		}
@@ -164,6 +163,7 @@ public class Post_Feed {
 		Thread.sleep(8000);
 
 	}
+
 	@Test(priority = 3, description = "To check user is able to select the group ")
 	public void select_group() throws InterruptedException {
 
@@ -172,25 +172,25 @@ public class Post_Feed {
 		driver.findElement(By.xpath("//button[contains(text(),'Post')]")).click();
 		Thread.sleep(6000);
 		driver.findElement(By.xpath("//h5[contains(text(),'Management Information')]")).click();
-		
+
 		driver.findElement(By.xpath("//h5[contains(text(),'Everyone')]")).click();
-		
-	String yu =driver.findElement(By.xpath("//input[@placeholder='Subject']")).getText();
-		String uy= "Subject";
-		
+
+		String yu = driver.findElement(By.xpath("//input[@placeholder='Subject']")).getText();
+		String uy = "Subject";
+
 		Thread.sleep(3000);
-		
+
 		System.out.println(uy);
 		if (yu.equals(uy)) {
 
-			test = extent.createTest("MyFirstTest", "Sample description");
+			test = extent.createTest("MyForthTest", "Sample description");
 			test.log(Status.PASS, MarkupHelper.createLabel("forth test case is pass", colors.BLACK));
 
 		}
 
 		else {
 
-			test = extent.createTest("MyFirstTest", "Sample description");
+			test = extent.createTest("MyForthTest", "Sample description");
 			test.log(Status.FAIL, MarkupHelper.createLabel("forth test case is FAIL", colors.LIME));
 
 		}
@@ -198,10 +198,99 @@ public class Post_Feed {
 		driver.navigate().refresh();
 
 		Thread.sleep(8000);
-		
-		
+
 	}
-	
+
+	@Test(priority = 4, description = "to check validation message when user doesn't enter the text in the field")
+	public void Validation_check() throws InterruptedException {
+
+		Thread.sleep(10000);
+
+		driver.findElement(By.xpath("//button[contains(text(),'Post')]")).click();
+		Thread.sleep(6000);
+		driver.findElement(By.xpath("//h5[contains(text(),'Management Information')]")).click();
+
+		driver.findElement(By.xpath("//h5[contains(text(),'Everyone')]")).click();
+
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//button[@type='submit'][contains(text(),'Post')]")).click();
+
+		Thread.sleep(4000);
+
+		String nb = driver.findElement(By.xpath("//*[text()= 'Please add a post subject']")).getText();
+		String bn = "Please add a post subject";
+
+		if (nb.equals(bn)) {
+
+			test = extent.createTest("MyFifthtTest", "Sample description");
+			test.log(Status.PASS, MarkupHelper.createLabel("fifth test case is pass", colors.BLACK));
+
+		}
+
+		else {
+
+			test = extent.createTest("MyFifthTest", "Sample description");
+			test.log(Status.FAIL, MarkupHelper.createLabel("fifth test case is FAIL", colors.LIME));
+
+		}
+
+		driver.navigate().refresh();
+
+		Thread.sleep(8000);
+	}
+
+	@Test(priority = 5, description = "add a post without attachment")
+	public void add_post_without_attachment() throws InterruptedException {
+
+		Thread.sleep(10000);
+
+		driver.findElement(By.xpath("//button[contains(text(),'Post')]")).click();
+		Thread.sleep(6000);
+		driver.findElement(By.xpath("//h5[contains(text(),'Management Information')]")).click();
+
+		driver.findElement(By.xpath("//h5[contains(text(),'Everyone')]")).click();
+
+		Thread.sleep(4000);
+
+		driver.findElement(By.xpath("//input[@placeholder='Subject']")).click();
+
+		driver.findElement(By.xpath("//input[@placeholder='Subject']")).sendKeys(" this is the new post");
+		driver.findElement(By.xpath("//textarea[@placeholder='What do you want to talk about?']"))
+				.sendKeys("KL Rahul had watched this carnage from 22 yards away. That too can have an"
+						+ " unsettling effect; for when Henry ran in to bowl his second over—with three slips and five fielders in catching posiA\r\n"
+						+ "\r\n"
+						+ "tions—the very first ball tickled Rahul’s bat and landed in Rod Latham’s gloves. From this position of 5 for three after 3.1 overs— and especially due to India’s"
+						+ " hitand-miss middle order—sponging up the pressure seemed an improbable task. Promptly the team found itself on 24 for four at the 10-over mark, the new low in this World Cup’s powerplays.");
+
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//button[@type='submit'][contains(text(),'Post')]")).click();
+
+		Thread.sleep(8000);
+
+		String ui = driver.findElement(By.xpath("//h3[contains(text(),'this is the new post')]")).getText();
+		String iu = "this is the new post";
+
+		if (ui.equals(iu)) {
+
+			test = extent.createTest("MyFifthtTest", "Sample description");
+			test.log(Status.PASS, MarkupHelper.createLabel("fifth test case is pass", colors.BLACK));
+
+		}
+
+		else {
+
+			test = extent.createTest("MyFifthTest", "Sample description");
+			test.log(Status.FAIL, MarkupHelper.createLabel("fifth test case is FAIL", colors.LIME));
+
+		}
+
+		driver.navigate().refresh();
+
+		Thread.sleep(8000);
+
+	}
+
+	@Test(priority = 6, description = "")
 
 	@AfterMethod
 
