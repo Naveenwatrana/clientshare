@@ -5,8 +5,8 @@
     <classes>
       <class name="clientshare.Post_Feed">
         <methods>
+          <include name="add_attachments"/>
           <include name="teardown"/>
-          <include name="add_post_without_attachment"/>
           <include name="set"/>
           <include name="Getresult"/>
         </methods>

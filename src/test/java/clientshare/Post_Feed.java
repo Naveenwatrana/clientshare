@@ -1,5 +1,7 @@
 package clientshare;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -272,14 +274,14 @@ public class Post_Feed {
 
 		if (ui.equals(iu)) {
 
-			test = extent.createTest("MyFifthtTest", "Sample description");
+			test = extent.createTest("MySixthtTest", "Sample description");
 			test.log(Status.PASS, MarkupHelper.createLabel("fifth test case is pass", colors.BLACK));
 
 		}
 
 		else {
 
-			test = extent.createTest("MyFifthTest", "Sample description");
+			test = extent.createTest("MySixthTest", "Sample description");
 			test.log(Status.FAIL, MarkupHelper.createLabel("fifth test case is FAIL", colors.LIME));
 
 		}
@@ -290,7 +292,73 @@ public class Post_Feed {
 
 	}
 
-	@Test(priority = 6, description = "")
+	@Test(priority = 6, description = "Add post with attachment")
+	public void add_attachments() throws InterruptedException, IOException {
+		
+		Thread.sleep(10000);
+
+		driver.findElement(By.xpath("//button[contains(text(),'Post')]")).click();
+		Thread.sleep(6000);
+		driver.findElement(By.xpath("//h5[contains(text(),'Management Information')]")).click();
+
+		driver.findElement(By.xpath("//h5[contains(text(),'Everyone')]")).click();
+
+		Thread.sleep(4000);
+
+		driver.findElement(By.xpath("//input[@placeholder='Subject']")).click();
+
+		driver.findElement(By.xpath("//input[@placeholder='Subject']")).sendKeys("this is the new post 2");
+		
+		driver.findElement(By.xpath("//textarea[@placeholder='What do you want to talk about?']"))
+		.sendKeys("The recommendations are the basis of the new constitution which stipulates that cricket matters be dealt by cricketers only.\r\n" + 
+				"\r\n" + 
+				"“In the old Memorandum & Rules and Regulations of the BCCI there was a specific provision viz. Rule 13(b)(7) which expressly empowered"
+				+ " the Honorary Secretary to convene and attend meetings of the Selection Committee. There is no such provision under the New BCCI Constitution,”"
+				+ " states the CoA directive. The Honorary Secretary is not part of the management either for cricketing or non-cricketing matters under new BCCI constitution."
+				+ "” Amitabh Chaudhary is the BCCI secretary now.\r\n" + 
+				"\r\n" + 
+				"“Except on overseas tours, the chairpersons of the respective selection committees shall convene the meetings of the selection committees"
+				+ " .... the chairpersons of the respective selection committees or administrative manager"
+				+ " (in case of overseas tour) shall prepare true and accurate minutes of every meeting,” says the CoA.\r\n" + 
+				"\r\n" + 
+				"The CoA felt that the secretary is not required as the official has no say in matters pertaining to selection.");
+		
+		driver.findElement(By.xpath("/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]")).click();
+		
+		Thread.sleep(5000);
+		
+		Runtime.getRuntime().exec("D:\\auotitsave\\Autosavefolder\\upload1.exe");
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//button[@type='submit'][contains(text(),'Post')]")).click();
+		Thread.sleep(10000);
+		
+		
+String nm = 		driver.findElement(By.xpath("//h3[contains(text(),'this is the new post 2')]")).getText();
+String mn = "this is the new post 2";
+
+if (nm.equals(mn)) {
+
+	test = extent.createTest("MysevenhtTest", "Sample description");
+	test.log(Status.PASS, MarkupHelper.createLabel("fifth test case is pass", colors.BLACK));
+
+}
+
+else {
+
+	test = extent.createTest("MyseventhTest", "Sample description");
+	test.log(Status.FAIL, MarkupHelper.createLabel("fifth test case is FAIL", colors.LIME));
+
+}
+
+driver.navigate().refresh();
+
+Thread.sleep(8000);
+		
+		
+		
+	}
+	
+	
 
 	@AfterMethod
 

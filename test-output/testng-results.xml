@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61023" started-at="2019-07-12T06:47:58Z" finished-at="2019-07-12T06:48:59Z">
+  <suite name="Default suite" duration-ms="111808" started-at="2019-07-19T09:18:51Z" finished-at="2019-07-19T09:20:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61023" started-at="2019-07-12T06:47:58Z" finished-at="2019-07-12T06:48:59Z">
+    <test name="Default test" duration-ms="111808" started-at="2019-07-19T09:18:51Z" finished-at="2019-07-19T09:20:43Z">
       <class name="clientshare.Post_Feed">
-        <test-method status="PASS" signature="set()[pri:0, instance:clientshare.Post_Feed@26653222]" name="set" is-config="true" duration-ms="23879" started-at="2019-07-12T06:47:34Z" finished-at="2019-07-12T06:47:58Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:clientshare.Post_Feed@26653222]" name="set" is-config="true" duration-ms="23478" started-at="2019-07-19T09:18:27Z" finished-at="2019-07-19T09:18:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="add_post_without_attachment()[pri:5, instance:clientshare.Post_Feed@26653222]" name="add_post_without_attachment" duration-ms="58299" started-at="2019-07-12T06:47:58Z" description="add a post without attachment" finished-at="2019-07-12T06:48:56Z">
+        <test-method status="PASS" signature="add_attachments()[pri:6, instance:clientshare.Post_Feed@26653222]" name="add_attachments" duration-ms="106298" started-at="2019-07-19T09:18:51Z" description="Add post with attachment" finished-at="2019-07-19T09:20:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add_post_without_attachment -->
-        <test-method status="PASS" signature="Getresult(org.testng.ITestResult)[pri:0, instance:clientshare.Post_Feed@26653222]" name="Getresult" is-config="true" duration-ms="2" started-at="2019-07-12T06:48:56Z" finished-at="2019-07-12T06:48:56Z">
+        </test-method> <!-- add_attachments -->
+        <test-method status="PASS" signature="Getresult(org.testng.ITestResult)[pri:0, instance:clientshare.Post_Feed@26653222]" name="Getresult" is-config="true" duration-ms="4" started-at="2019-07-19T09:20:37Z" finished-at="2019-07-19T09:20:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=add_post_without_attachment status=SUCCESS method=Post_Feed.add_post_without_attachment()[pri:5, instance:clientshare.Post_Feed@26653222] output={null}]]]>
+                <![CDATA[[TestResult name=add_attachments status=SUCCESS method=Post_Feed.add_attachments()[pri:6, instance:clientshare.Post_Feed@26653222] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Getresult -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:clientshare.Post_Feed@26653222]" name="teardown" is-config="true" duration-ms="2691" started-at="2019-07-12T06:48:56Z" finished-at="2019-07-12T06:48:59Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:clientshare.Post_Feed@26653222]" name="teardown" is-config="true" duration-ms="5437" started-at="2019-07-19T09:20:37Z" finished-at="2019-07-19T09:20:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
