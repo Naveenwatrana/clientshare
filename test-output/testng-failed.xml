@@ -5,8 +5,8 @@
     <classes>
       <class name="clientshare.Post_Feed">
         <methods>
+          <include name="add_comment"/>
           <include name="teardown"/>
-          <include name="Like_post"/>
           <include name="set"/>
           <include name="Getresult"/>
         </methods>

@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
+<testng-results skipped="0" failed="0" ignored="8" total="9" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30284" started-at="2019-08-05T07:19:39Z" finished-at="2019-08-05T07:20:10Z">
+  <suite name="Default suite" duration-ms="52049" started-at="2019-08-19T12:16:44Z" finished-at="2019-08-19T12:17:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30284" started-at="2019-08-05T07:19:39Z" finished-at="2019-08-05T07:20:10Z">
+    <test name="Default test" duration-ms="52049" started-at="2019-08-19T12:16:44Z" finished-at="2019-08-19T12:17:36Z">
       <class name="clientshare.Post_Feed">
-        <test-method status="PASS" signature="set()[pri:0, instance:clientshare.Post_Feed@3532ec19]" name="set" is-config="true" duration-ms="32412" started-at="2019-08-05T07:19:07Z" finished-at="2019-08-05T07:19:39Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:clientshare.Post_Feed@3532ec19]" name="set" is-config="true" duration-ms="18053" started-at="2019-08-19T12:16:26Z" finished-at="2019-08-19T12:16:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="Like_post()[pri:7, instance:clientshare.Post_Feed@3532ec19]" name="Like_post" duration-ms="27625" started-at="2019-08-05T07:19:39Z" description="Like any post" finished-at="2019-08-05T07:20:07Z">
+        <test-method status="PASS" signature="add_comment()[pri:8, instance:clientshare.Post_Feed@3532ec19]" name="add_comment" duration-ms="50051" started-at="2019-08-19T12:16:44Z" description="add the comment" finished-at="2019-08-19T12:17:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Like_post -->
-        <test-method status="PASS" signature="Getresult(org.testng.ITestResult)[pri:0, instance:clientshare.Post_Feed@3532ec19]" name="Getresult" is-config="true" duration-ms="4" started-at="2019-08-05T07:20:07Z" finished-at="2019-08-05T07:20:07Z">
+        </test-method> <!-- add_comment -->
+        <test-method status="PASS" signature="Getresult(org.testng.ITestResult)[pri:0, instance:clientshare.Post_Feed@3532ec19]" name="Getresult" is-config="true" duration-ms="2" started-at="2019-08-19T12:17:34Z" finished-at="2019-08-19T12:17:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Like_post status=SUCCESS method=Post_Feed.Like_post()[pri:7, instance:clientshare.Post_Feed@3532ec19] output={null}]]]>
+                <![CDATA[[TestResult name=add_comment status=SUCCESS method=Post_Feed.add_comment()[pri:8, instance:clientshare.Post_Feed@3532ec19] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Getresult -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:clientshare.Post_Feed@3532ec19]" name="teardown" is-config="true" duration-ms="2599" started-at="2019-08-05T07:20:07Z" finished-at="2019-08-05T07:20:10Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:clientshare.Post_Feed@3532ec19]" name="teardown" is-config="true" duration-ms="1955" started-at="2019-08-19T12:17:34Z" finished-at="2019-08-19T12:17:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

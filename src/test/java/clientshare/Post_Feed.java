@@ -3,7 +3,9 @@ package clientshare;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -393,12 +395,40 @@ public class Post_Feed {
 	
 	
 	@Test(priority = 8, description = "add the comment" )
-	public void add_comment() {
+	public void add_comment() throws InterruptedException {
+		Thread.sleep(20000);
+		/*driver.findElement(By.xpath("(//div[@class = 'DraftEditor-editorContainer'])[1]")).sendKeys("sfhjdskf");
+		
+		Thread.sleep(10000);*/
+		
+		
+		/*WebElement element_comment= driver.findElement(By.xpath("(//div[@class = 'DraftEditor-editorContainer'])[1]"));
+
+		    element_comment.click();
+		    Thread.sleep(5000);
+		    //element_comment.sendKeys("h");
+		driver.findElement(By.xpath("(//div[@class = 'DraftEditor-editorContainer'])[1]")).sendKeys("hgdsghdsuf");
+		*/
+		
+		/*WebElement wb = driver.findElement(By.xpath("(//div[@class = 'DraftEditor-editorContainer'])[1]"));
+		
+		wb.click();
+		Thread.sleep(3000);
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("arguments[0].value='fghghjfgfffuykuygd';", wb);
+		wb.sendKeys("45");
+		
 		Thread.sleep(10000);
-		driver.findElement(By.xpath(""))
+		*/
 		
+		String inputText = "Rozmeen";
+		WebElement myElement = driver.findElement(By.xpath("(//div[@class = 'DraftEditor-editorContainer'])[1]"));
+		Thread.sleep(10000);
+		String js = "arguments[0].setAttribute('value','"+inputText+"')";
 		
-		
+		Thread.sleep(10000);
+		((JavascriptExecutor) driver).executeScript(js, myElement);
+		Thread.sleep(10000);
 	}
 
 	@AfterMethod
